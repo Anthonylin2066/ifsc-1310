@@ -43,15 +43,16 @@ header.primary h1{
     padding-right:40px;
     padding-bottom:40px;
     padding-left:40px;
-    margin:auto;
+    margin:-8px -8px;
 }
 
 header.primary h2{
   font-family: 'Roboto Condensed', sans-serif;
-  margin:0;
-  border-bottom:2px dotted;
-  padding-top:35px;
-  padding-bottom:10px;
+  margin-top:30px;
+  padding-left:8px;
+  border-bottom:2.5px solid #92A8D4;
+  border-left:6.5px solid #92A8D4;
+  width:350px;
 }
 
 header.primary nav ul{
