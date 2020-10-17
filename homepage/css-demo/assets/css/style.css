@@ -1,0 +1,255 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ----- */
+
+.container{
+  width:80vw;
+  margin:0 auto;
+  max-width:900px;
+}
+
+/* ---- Responsive Images ----*/
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ----- Global Styles ---- */
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin:0;
+}
+
+header.primary{
+    background-color:#99BCF0;
+    /* SVG Background */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    /*text stuff*/
+    text-align:center;
+    color:#ffffff;
+    text-shadow: 1px 1px #000000; 
+    /*longform*/
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:20px;
+    padding-left:40px;
+    /* Shorthand T,R,B,L*/
+    padding: 40px 40px 20px 40px;
+    /* Shorthand Top/Bottom, Left/Right*/
+    padding: 20px 40px;
+}
+
+header.primary h1{
+  font-size: 3.2rem;
+  margin:20px 0px;
+}
+
+header.primary h1 a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size:2em;
+    /* Shorthand Three Value Top, Left/Right, Bottom*/
+    margin:20px auto 40px;
+}
+
+header.primary nav li{
+    list-style-type:none;
+    padding:0;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:0;
+  max-width:900px;
+  margin:20px auto;
+}
+
+header.primary nav a:link, header.primary nav.a visited{
+  color:white;
+  text-decoration:none;
+  background-color:#418CF2;
+  background-color:rgba(65,140,242, .5);
+  padding:8px 16px;
+  border-radius:20px;
+}
+
+header.primary nav a:hover, header.primary nav a:active{
+  background-color:rgba(65,140,242,1);
+  transition:.6s;
+}
+
+#intro{
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom:1.5em;
+}
+
+#intro h2{
+  color:#3b638b;
+}
+
+#intro p{
+  line-height:1.5;
+}
+
+section#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom: 2.6em;
+  border-top:1px solid #c0c0c0;
+  padding-top:2.6em;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  transition:.6s;
+}
+
+#content article.post:hover{
+  box-shadow:0 16px 16px rgba(0,0,0,.4);
+}
+
+#content article time, #content article figcaption, #content article footer{
+  font-size:.8em;
+  color:#c0c0c0;
+  text-transform:uppercase;
+}
+
+#content .post a:link, #content .post a:visited{
+  color:#3b638b;
+}
+
+content .post figure{
+  margin:0;
+}
+
+  /* Attribute Selector */
+aside[role="complementary"]{
+  background-color:#418CF2;
+  color:#ffffff;
+  padding:2.5
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside .container h2{
+  border-left:5px solid #3b638b;
+  padding-left:8px;
+}
+
+aside .widget{
+  width:28vw;
+}
+
+
+aside article a:link, aside article a:visited{
+  color:#ffffff;
+  display:block;
+  margin-top:1.2em;
+  width:95px;
+  letter-spacing:1.2px;
+}
+
+aside article a:hover, aside article a:active{
+  text-decoration:none;
+}
+
+aside article footer{
+  display:none;
+}
+
+footer#colophon{
+  background-color:#99BCF0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#fff;
+  text-align:center;
+  font-size:.7em;
+  text-transform:uppercase;
+}
+
+#additional-elements h2{
+  color:#3b638b;
+  border-bottom:2px dotted #c0c0c0;
+  padding-bottom:5px;
+
+}
+
+#additional-elements a:link, #additional-elements a:visited{
+  color:#3b638b;
+}
+
+#additional-elements a:hover, #additional-elements a:active{
+  text-decoration:none;
+}
+
+#additional-elements p{
+  line-height:1.5;
+}
+
+#additional-elements h3{
+  border-left:5px solid #3b638b;
+  padding-left:8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------Media Queries----------------- */
+/*this is basically the ul list items or buttons presented 
+horizontally to be presented vertically in order to fit a smaller screen format*/
+
+
+@media screen and (max-width:600px){
+  
+ header.primary nav ul{
+  flex-direction:column;
+   margin:0 auto;
+   } 
+  
+  header.primary nav ul li{
+    margin-bottom:10px;
+  }
+  
+  header.primary nav ul li a{
+    display:block;
+  }
+
+}
+
