@@ -1,6 +1,6 @@
 /* ---------------Box Sizing----------------- */
 
-html {
+html{
   box-sizing: border-box;
   
 }
@@ -17,6 +17,31 @@ html {
   width:80vw;
   margin:0 auto;
   max-width:900px;
+}
+
+.img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding:5px;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding:5px;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  border: 1px solid #c0c0c0;
+  padding:5px;
+}
+
+img-center{
+  
 }
 
 /* ---- Responsive Images ----*/
@@ -39,7 +64,7 @@ header.primary{
     /*text stuff*/
     text-align:center;
     color:#ffffff;
-    text-shadow: 1px 1px #000000; 
+    text-shadow: .5px .5px #000000; 
     /*longform*/
     padding-top:40px;
     padding-right:40px;
@@ -70,6 +95,7 @@ header.primary h2{
 header.primary nav li{
     list-style-type:none;
     padding:0;
+    color:white;
 }
 
 header.primary nav ul{
@@ -81,8 +107,13 @@ header.primary nav ul{
   margin:20px auto;
 }
 
-header.primary nav a:link, header.primary nav.a visited{
+header.primary nav ul a{
   color:white;
+}
+
+header.primary nav a:link, header.primary nav.a visited{
+  font-size:16px;
+  font-weight:bold;
   text-decoration:none;
   background-color:#418CF2;
   background-color:rgba(65,140,242, .5);
@@ -92,6 +123,7 @@ header.primary nav a:link, header.primary nav.a visited{
 
 header.primary nav a:hover, header.primary nav a:active{
   background-color:rgba(65,140,242,1);
+  color:#949DB3;
   transition:.6s;
 }
 
@@ -215,19 +247,74 @@ footer#colophon{
   line-height:1.5;
 }
 
-#additional-elements h3{
+#additional-elements h3, #additional-elements h4{
   border-left:5px solid #3b638b;
-  padding-left:8px;
+  padding:5px 10px;
 }
 
+table{
+  width:100%;
+  border: 1px solid #c0c0c0;
+  border-collapse:collapse;
+}
 
+caption{
+  font-weight:bold;
+  font-size:1.5rem;
+  padding-bottom:10px;
+  margin:10px;
+}
 
+th{
+  background:#99BCF0;
+  text-align:left;
+  padding:8px;
+}
 
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
 
+tr:nth-child(even){
+  background:#DCDCDC;
+}
 
+tr:hover{
+  background:lightsteelblue;
+}
 
+#additional-elements ol{
+  list-style-type:upper-roman;
+}
 
+#additional-elements ul ul{
+  list-style-type:square;
+}
 
+#additional-elements dl{
+  
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+#additional-elements dd{
+  margin:0;
+}
+
+dd + dt{
+  margin-top:20px;
+}
+
+#additional-elements blockquote{
+  background-color:rgba(0,0,0,.1);
+  padding:40px;
+  border-top:5px solid #c0c0c0;
+  border-bottom:5px solid #c0c0c0;
+}
 
 
 
