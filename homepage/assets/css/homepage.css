@@ -55,6 +55,13 @@ header.primary h2{
   width:350px;
 }
 
+header.primary h3{
+  margin-top:40px;
+  border-bottom:2.5px solid #92A8D4;
+  width:350px;
+  padding-left:115px;
+}
+
 header.primary nav ul{
   list-style-type:none;
   padding:0;
@@ -63,7 +70,7 @@ header.primary nav ul{
 header.primary nav li{
   flex-direction:column;
   justify-content:space-between;
-  padding:13px
+  padding:12px 30px 12px 10px;
 }
 
 header.primary nav a{
