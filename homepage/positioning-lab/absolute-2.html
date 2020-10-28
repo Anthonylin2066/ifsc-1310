@@ -18,61 +18,76 @@ body {
 	line-height: 24px;
 }
 #wrapper {
-	background-color: #FFF;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	width: 800px;
-	height:800px;
-	margin-right: auto;
-	margin-left: auto;
-	position:relative;
+  background-color: #FFF;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  width: 800px;
+  height: 800px;
+  position:relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 #red {
-	background-color: #900;
-	width:175px;
-	height:180px;
-	position:absolute;
-	top:0;
-	left:0;
+  background-color: #900;
+  width: 100px;
+  height:100px;
+  position: absolute;
+  top:0;
+  left:0;
 }
 #green {
-	background-color: #090;
-	width:175px;
-	height:180px;
-	position:absolute;
-	top:0;
-	right:0;
+  background-color: #090;
+  width: 100px;
+  height:100px;
+  position: absolute;
+  top:0;
+  right:0;
 }
 #blue {
-	background-color: #00F;
-	width:175px;
-	height:180px;
-	position:absolute;
-	bottom:0;
-	left:0;
+  background-color: #00F;
+  width: 100px;
+  height:100px;
+  position: absolute;
+  bottom:0;
+  left:0;
 }
 #purple {
-	background-color: #63C;
-	width:175px;
-	height:180px;
-	position:absolute;
-	bottom:0;
-	right:0;
+  background-color: #63C;
+  width: 100px;
+  height:100px;
+  position: absolute;
+  bottom:0;
+  right:0;
 }
 #footer {
-	background-color: #666; 
-	clear:both;
-	width:175px;
-	height:180px;
-	margin:auto;
-	margin-top:38%;
+  background-color: #666;
+  width: 100px;
+  height:100px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-50px;
+  margin-left:-50px;
 }
+
+/* Another approach for the footer
+#footer {
+  background-color: #666;
+  width: 100px;
+  height:100px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+*/
+
 h1 {
 	color: #000;
 	font-weight: normal;
@@ -83,7 +98,7 @@ h1 {
 </head>
 
 <body>
-<h1>Absolute Positioning 1</h1>
+<h1>Absolute Positioning 2</h1>
 <div id="wrapper">
   <div id="red">Red</div>
   <div id="green">Green</div>
