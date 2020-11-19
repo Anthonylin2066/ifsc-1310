@@ -1,0 +1,229 @@
+html{
+  box-sizing: border-box;
+  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    margin:0;
+}
+
+/* header and footer */
+
+header.primary{
+    background-color:#99BCF0;
+    /*text stuff*/
+    text-align:center;
+    color:#ffffff;
+    text-shadow: 3px 3px #000000; 
+    /*positioning*/
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:20px;
+    padding-left:40px;
+    background-image: url("../img/spacex.png");
+}
+
+header.primary img{
+  margin-top:-30px;
+  padding-left:35px;
+}
+
+header.primary h3{
+  margin-top:-5px;
+  margin-bottom:20px;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  list-style-type: none;
+  justify-content:center;
+}
+
+header.primary nav ul a{
+  color:white;
+}
+
+header.primary nav a:link, header.primary nav.a visited{
+  font-size:16px;
+  font-weight:bold;
+  text-decoration:none;
+  padding:8px 16px;
+  border-radius:7px;
+}
+
+header.primary nav a:hover, header.primary nav a:active{
+  background-color:rgba(73,74,156,.8);
+  text-decoration:none;
+  transition:.6s;
+}
+
+footer#colophon{
+  background-color:#3C4A9C;
+}
+
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#fff;
+  text-align:center;
+  font-size:.7em;
+  text-transform:uppercase;
+}
+
+#colophon a{
+  color:#fff;
+}
+
+#colophon a:hover{
+  text-decoration:none;
+}
+
+
+img {
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* index (home/about/centering/lists) */
+
+.container{
+  width:80vw;
+  margin:0 auto;
+  max-width:1080px;
+}
+
+header.primary nav ul li{
+  list-style-type: none;
+  border-left:5px solid #3C4A9C;
+  
+}
+
+.container ul li{
+  border-left:5px solid #3b638b;
+  padding-left:8px;
+  list-style-type:none;
+}
+
+.container ul li a:hover {
+  text-decoration:none;
+}
+
+.container img{
+  box-shadow: 10px 10px 10px #ccc;
+}
+
+/* history page */
+
+.table{
+  text-align:center;
+  margin-top:50px;
+  border-bottom:3px solid;
+  border-color:#3C4A9C;
+}
+
+
+.content-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.content-table thead tr {
+  background-color: #3C4A9C;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #3C4A9C;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+
+/* faq page and h2 styles */
+
+.container details {
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px;
+  outline:none;
+  margin-bottom:10px;
+}
+
+.container details summary:hover {
+  height:30px;
+  margin-bottom:-8px;
+  transition:1s;
+}
+
+
+.container details summary:focus {
+  outline: none;
+}
+
+.container h2{
+  border-bottom:3px solid;
+  border-color:#3C4A9C;
+  width:20%;
+}
+
+
+/* ---------------Media Queries----------------- */
+/*this is basically the ul list items or buttons presented 
+horizontally to be presented vertically in order to fit a smaller screen format*/
+
+@media screen and (max-width:600px){
+  
+ header.primary nav ul{
+  flex-direction:column;
+   margin:0 auto;
+   } 
+  
+  header.primary nav ul li{
+    margin-bottom:10px;
+  }
+  
+  header.primary nav ul li a{
+    display:block;
+  }
+
+}
+
+
+
