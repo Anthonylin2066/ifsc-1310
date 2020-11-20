@@ -12,10 +12,16 @@ html {
 }
 
 /* ----- Utility ---- */
-.container{
+p{
   width:80vw;
   margin:0 auto;
   max-width:900px;
+  padding-bottom:25px;
+}
+
+h2{
+  text-align:center;
+  border-bottom:2.5px solid #92A8D4;
 }
 
 /* ---- Responsive Images ----*/
